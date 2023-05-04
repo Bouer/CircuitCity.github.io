@@ -1,0 +1,47 @@
+
+.main-contacto{
+    margin: 40px 0 0 20px;
+}
+.main-contacto-cuadro, .input-padron{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+/* utilizando la , podemos aplicar varias configuraciones a varios inputs*/
+/*form input, form textarea{*/
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    font-size: 20px;
+    margin: 20px 100px;
+
+
+}
+/*Jerarquia de marcadores. entre identificador (id), etiqueta (<>) y clase (class)
+
+1ro ID 2do CLASS 3ro Etiqueta */
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-style: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px; /*Borde redondeado - radio de curva de la esquina*/
+    /*transition: 2s all; Le da un tiempo para el cambio de color generado por el hover - el all nos altera a todas las propiedades*/
+    cursor: pointer; /* Cambiamos el cursor por la manito*/
+}
+.enviar:hover{  /*para darle un resalte cuando pasamos el mouser*/
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+
+

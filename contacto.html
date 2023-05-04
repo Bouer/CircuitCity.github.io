@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CircuitCity</title>
+        <!--VINCULANDO PAGINAS EXTERNAS-->
+        <link rel="stylesheet" href="style.css"> <!--link:css-->
+		<link rel="stylesheet" href="style-contacto.css">
+        <script src="https://kit.fontawesome.com/cba76f59a1.js" crossorigin="anonymous"></script>
+        
+    </head>
+<body>
+    <header class="header">
+        <div class="header-slogan">
+            <span class="slogan">351-xxxxxx</span>
+            <span class="slogan">Envios Gratis a partir de los $20000</span>
+        </div>
+        <div class="header-nav">
+            <div class="header-nav-buscador">
+                       
+                    
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="logo nav-link">Logo</a>
+                
+                <input type="text" class="nav-buscador" name="Buscador" placeholder="Buscar">
+                    
+                <ul class="nav-menu">
+                <!-- <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link">Tienda</a></li> -->
+                    <li class="nav-menu-item">
+                        <a href="ubicacion.html" class="nav-menu-link nav-link"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i></a></li>
+                    <li class="nav-menu-item">
+                        <a href="contacto.html" class="nav-menu-link nav-link"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a></li>
+                    <li class="nav-menu-item">
+                        <a href="#" class="nav-menu-link nav-link"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+		<form class="main-contacto">
+				<label class="main-contacto-text" for="nombreapellido">Nombre y Apellido</label>
+				<input  type="text" id="nombreapellido" class="input-padron" required>
+				<!--el required es para volver el campo obligatorio -->
+				<label class="main-contacto-text" for="correoelectronico">Correo Electrónico</label>
+				<input  type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+				<!--http://mobileinputtypes.com/ para configurar type para el celular-->
+				<label class="main-contacto-text" for="telefono">Teléfono</label>
+				<input  type="tel" id="telefono" class="input-padron" required placeholder="(xxx) xxxxxxx">
+				<!--placeholder ayuda al usuario mostrando el formato en el selector-->
+				<label class="main-contacto-text" for="mensaje">Mensaje</label>
+				<textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+
+				<fieldset>
+					<legend>¿Cómo le gustaria que lo contactemos?</legend>
+
+					<label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+
+					<label for="radio-telefono"><input type="radio" name="contacto" value="Telefono" id="radio-telefono">Telefono</label>
+
+					<!--type radio es por un redondel para seleccionar-->
+					<!--name contacto agrupa todos y permite seleccionar solo 1-->
+					<!--id nombre para utilizar con el label-->
+					<label for="radio-whatsapp"><input type="radio" name="contacto" value="Whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox" checked> <!--checked me deja tildada la opcion-->
+					¿Le gustaría recibir novedades?
+				</label>
+				<div class="btn-enviar">
+					<input  type="submit" value="Enviar formulario" class="enviar">
+				</div>
+		</form>
+	</main>
+    
+</body>
+</html>

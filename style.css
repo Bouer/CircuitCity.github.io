@@ -1,0 +1,429 @@
+/*SELECTOR del nodo principal (raiz) - mas generico que HTML*/
+:root {
+    /*VARIABLES DE CSS*/
+    --theme-color: white;
+    --primary-color: #0769e9;
+    --secundary-color: #F7C331;
+    --text-color-inverse: white;
+    --text-color: black;
+    --navbar-shallow-color: #e5e5e5;
+    --menu-mobile-background-color: #3A4460;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+/*body {
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}*/
+
+.header-slogan{
+    background-color: #F7C331;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+.header-nav {
+    background-color: var(--primary-color);
+    height: 80px;
+    /*position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;*/
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.nav-link {
+    color: var(--text-color-inverse);
+    text-decoration: none;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+.nav-menu {
+    display: flex;
+    margin-right: 10px;
+    list-style: none;
+}
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.nav-menu-link:hover {
+    background-color: var(--menu-mobile-background-color);
+    border-radius: 15px;
+    transition: .5s;
+}
+.nav-buscador {
+    
+    box-sizing: border-box;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    padding: 5px 20px 5px 40px;
+    width: 30%;
+    opacity: 100;
+    transition: width 0.4s ease-in-out;
+}
+.nav-buscador:focus {
+    width: 60%;
+}
+
+
+/*----------------------PROMOCION----------------------------*/
+.promocion {
+    background-color: #3A4460;
+    width: 100%;
+    height: 300px;
+    color: #e5e5e5;
+    font-size: 50px;
+    margin: 10px 0 40px 0;    
+}
+/*-------------------------SLIDER-----------------------------------*/
+img-slider img {
+    margin-top: 30px;
+    height: 720px;
+    width: 1080px;
+  }
+  @keyframes slide {
+    0% {
+      left: 0px;
+    }
+    15% {
+      left: 0px;
+    }
+    20% {
+      left: -1080px;
+    }
+    32% {
+      left: -1080px;
+    }
+    35% {
+      left: -2160px;
+    }
+    47% {
+      left: -2160px;
+    }
+    50% {
+      left: -3240px;
+    }
+    63% {
+      left: -3240px;
+    }
+    66% {
+      left: -4320px;
+    }
+    79% {
+      left: -4320px;
+    }
+    82% {
+      left: -5400px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+  .img-slider {
+    display: flex;
+    float: left;
+    position: relative;
+    width: 1080px;
+    height: 720px;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition-duration: 2s;
+  }
+  
+  .heading1 {
+    opacity: 0;
+  }
+  .search {
+    display: flex;
+    position: relative;
+  }
+  .section1 {
+    width: 1080px;
+    overflow: hidden;
+  
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+  }
+
+
+  /*----------FOOTER--------*/
+  /*=============================================*/
+/*---------------------------------------------
+					 Contact Start 
+-----------------------------------------------*/
+
+/*--
+	slider-contact Start 
+--*/
+#slider-contact {
+    background: url("../img/slider-bg2.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 107px;
+    position: relative;
+  }
+  #slider-contact:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #928dab, #1f1c2c 70%);
+    opacity: 0.8;
+  }
+  #slider-contact .block {
+    color: #E3E3E4;
+    margin: 0 auto;
+    padding-left: 90px;
+  }
+  #slider-contact .block h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 45px;
+    line-height: 60px;
+    letter-spacing: 6px;
+    padding-bottom: 15px;
+  }
+  #slider-contact .block p {
+    font-size: 23px;
+    line-height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+  /*--
+      contact-form Start 
+  --*/
+  #contact-form {
+    padding-top: 70px;
+    padding-bottom: 35px;
+  }
+  #contact-form .block form .form-group {
+    padding-bottom: 15px;
+    margin: 0px;
+  }
+  #contact-form .block form .form-group .form-control {
+    background: #F6F8FA;
+    height: 60px;
+    border: 1px solid #EEF2F6;
+    box-shadow: none;
+    width: 100%;
+  }
+  #contact-form .block form .form-group-2 {
+    padding-bottom: 15px;
+    margin: 0px;
+  }
+  #contact-form .block form .form-group-2 textarea {
+    background: #F6F8FA;
+    height: 135px;
+    border: 1px solid #EEF2F6;
+    box-shadow: none;
+    width: 100%;
+  }
+  #contact-form .block button {
+    width: 100%;
+    height: 60px;
+    background: #47424C;
+    border: none;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+  }
+  /*--
+      wrapper-contact Start 
+  --*/
+  .address-block li {
+    margin-bottom: 20px;
+  }
+  .address-block li i {
+    margin-right: 15px;
+    font-size: 20px;
+    width: 20px;
+  }
+  .social-icons {
+    margin-top: 40px;
+  }
+  .social-icons li {
+    display: inline-block;
+    margin: 0 6px;
+  }
+  .social-icons a {
+    display: inline-block;
+  }
+  .social-icons i {
+    color: #2C2C2C;
+    margin-right: 25px;
+    font-size: 25px;
+  }
+  .google-map {
+    position: relative;
+  }
+  .google-map #map {
+    width: 100%;
+    height: 300px;
+    background-color: #ff432e;
+  }
+  #contact-box {
+    padding-top: 35px;
+    padding-bottom: 58px;
+  }
+  #contact-box .block img {
+    width: 100%;
+  }
+  #contact-box .block h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #000;
+    font-size: 28px;
+    padding-bottom: 30px;
+  }
+  #contact-box .block p {
+    color: #5C5C5C;
+    display: block;
+  }
+  /*--
+      features-contact Start 
+  --*/
+  #features-contact {
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
+  #features-contact .block ul li {
+    width: 19%;
+    text-align: center;
+    display: inline-block;
+    padding: 40px 0px;
+  }
+  /*---------------------------------------------
+                      Contact Close 
+  -----------------------------------------------*/
+  /*--------- Heading------------*/
+  .heading {
+    padding-bottom: 60px;
+    text-align: center;
+  }
+  .heading h2 {
+    color: #000;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+  }
+  .heading p {
+    font-size: 18px;
+    line-height: 40px;
+    color: #000000;
+    font-weight: 300;
+  }
+  /*---------------------------*/
+  
+      
+.productos{
+    width: 940px;
+    margin:0 auto;
+    padding: 50px;
+}
+.productos li {
+    display:inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /*background: #CCCCCC;*/
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    /*border-box - el limite de los objetos son los de la caja*/
+    box-sizing: border-box;
+    /*border-color: #000000;
+    border-width: 2px;
+    border-style: solid;*/
+    /*Border simplificado - tamaño tipo y color*/
+    border: 3px solid #000000;
+    border-radius: 10px;
+}
+.productos li:hover{
+    border-color: #c78c19;
+}
+/*:active nos da funciones para cuando el objeto esta activo*/
+.productos li:active{
+    border-color: #2f6e04;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+ 
+footer {
+    background: #f7bf09;
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 55px;
+  }
+  footer p {
+    font-size: 13px;
+    line-height: 25px;
+    color: #000000;
+  }
+  footer a {
+    color: #000000;
+  }
+  footer .footer-manu {
+    padding-bottom: 25px;
+  }
+  footer .footer-manu ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  footer .footer-manu ul li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  footer .footer-manu ul li a {
+    display: inline-block;
+    color: #000000;
+  }
+  footer .footer-manu ul li a:hover {
+    color: #000;
+  }
+  
