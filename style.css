@@ -1,9 +1,10 @@
 /*SELECTOR del nodo principal (raiz) - mas generico que HTML*/
 :root {
     /*VARIABLES DE CSS*/
-    --theme-color: white;
-    --primary-color: #0769e9;
-    --secundary-color: #F7C331;
+    --theme-color: #585151;
+    --primary-color: #547980;
+    --secundary-color: #9DE0AD;
+    --tercer-color: #616060;
     --text-color-inverse: white;
     --text-color: black;
     --navbar-shallow-color: #e5e5e5;
@@ -20,7 +21,7 @@
 }*/
 
 .header-slogan{
-    background-color: #F7C331;
+    background-color: var(--theme-color);
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
@@ -92,18 +93,22 @@
 
 /*----------------------PROMOCION----------------------------*/
 .promocion {
-    background-color: #3A4460;
+    display: inline-block;
     width: 100%;
-    height: 300px;
-    color: #e5e5e5;
+    
     font-size: 50px;
-    margin: 10px 0 40px 0;    
+    margin: 0px 0 40px 0;    
 }
+.promocion-img {
+  height: 550px;
+  width: 100%;
+  
+ }
 /*-------------------------SLIDER-----------------------------------*/
 img-slider img {
     margin-top: 30px;
-    height: 720px;
-    width: 1080px;
+    height: 100px;
+    
   }
   @keyframes slide {
     0% {
@@ -171,6 +176,38 @@ img-slider img {
     margin: 0px auto;
   }
 
+/*----------------MEDIOS DE PAGO-------------------------*/
+.mediosdepago-list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--secundary-color);
+  border-radius: 5px;
+  width: 60%;
+  height: 80px;
+  margin: 10px auto;
+}
+.mediosdepago-list-link {
+  padding-right: 40px;
+  font-size: 20px;
+  color: var(--text-color-inverse);
+}
+.mediosdepago-list-vermas{
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: 0.5s;
+  
+}
+.mediosdepago-list-vermas:hover {
+  color: var(--text-color-inverse);
+ 
+}
+.mediosdepago-icon {
+  margin:  10px 0;
+  font-size: 25px;
+  
+}
 
   /*----------FOOTER--------*/
   /*=============================================*/
