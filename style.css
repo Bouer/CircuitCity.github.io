@@ -35,40 +35,50 @@
     left: 0;*/
 }
 
-.nav {
+.nav  {
     display: flex;
     justify-content: space-between;
-
     max-width: 1500px;
     margin: 0 auto;
 }
-.nav-link {
+.categorias {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 30px auto;
+  padding: 0px 0px;
+  background-color: var(--primary-color);
+  
+}
+.nav-link , .categorias-link  {
     color: var(--text-color-inverse);
     text-decoration: none;
 }
+
 .logo {
     font-size: 30px;
     font-weight: bold;
     padding: 0 40px;
     line-height: 80px;
 }
-.nav-menu {
+.nav-menu , .categorias-menu {
     display: flex;
     margin-right: 10px;
     list-style: none;
+    
 }
-.nav-menu-item {
+.nav-menu-item , .categorias-menu-items {
     font-size: 18px;
     margin: 0 10px;
     line-height: 80px;
     text-transform: uppercase;
     width: max-content;
 }
-.nav-menu-link {
+
+.nav-menu-link, .categorias-menu-link {
     padding: 8px 12px;
     border-radius: 3px;
 }
-.nav-menu-link:hover {
+.nav-menu-link:hover , .categorias-menu-link:hover{
     background-color: var(--menu-mobile-background-color);
     border-radius: 15px;
     transition: .5s;
@@ -76,12 +86,12 @@
 .nav-buscador {
     
     box-sizing: border-box;
-    margin: 20px auto;
+    margin: 20px auto ;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 16px;
     background-repeat: no-repeat;
-    padding: 5px 20px 5px 40px;
+    padding: 10px 20px 0px 40px;
     width: 30%;
     opacity: 100;
     transition: width 0.4s ease-in-out;
@@ -181,7 +191,7 @@ img-slider img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--secundary-color);
+  background-color: var(--primary-color);
   border-radius: 5px;
   width: 60%;
   height: 80px;
@@ -195,7 +205,7 @@ img-slider img {
 .mediosdepago-list-vermas{
   font-size: 16px;
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--text-color);
   transition: 0.5s;
   
 }
